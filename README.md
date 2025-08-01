@@ -1,15 +1,13 @@
-## 1. Solution: Using **function**
-**Topic:** With or without function?
+<div style="display: flex; gap: 20px;">
 
-<table>
-  <tr>
-    <th>With function</th>
-    <th>Without function</th>
-  </tr>
-  <tr>
-    <td>
+<!-- Bảng 1 -->
+<div style="flex: 1">
 
-```python
+### 🔹 With Function
+
+| Code |
+|------|
+|```python
 import sys
 from PyQt5.QtWidgets import *
 
@@ -39,24 +37,33 @@ def window():
 
 if __name__ == '__main__':
     window()
-</td>
+```|
+
+</div>
+
+<!-- Bảng 2 -->
+<div style="flex: 1">
+
+### 🔹 Without Function
+
+| Code |
+|------|
+|```python
 import sys
 from PyQt5.QtWidgets import QApplication, QDialog, QPushButton, QDesktopWidget
 
 def window():
     app = QApplication(sys.argv)
     win = QDialog()
-    win.resize(500, 500)  # Kích thước cửa sổ
+    win.resize(500, 500)
 
-    # Nút bấm
     b1 = QPushButton("Button1", win)
     b1.move(50, 20)
 
-    # Căn giữa cửa sổ
-    qr = win.frameGeometry()  # Lấy khung hình của cửa sổ
-    cp = QDesktopWidget().availableGeometry().center()  # Tâm của màn hình
+    qr = win.frameGeometry()
+    cp = QDesktopWidget().availableGeometry().center()
     qr.moveCenter(cp)
-    win.move(qr.topLeft())  # Di chuyển cửa sổ đến vị trí mới
+    win.move(qr.topLeft())
 
     win.setWindowTitle("PyQt5 - Centered Window")
     win.show()
@@ -64,4 +71,8 @@ def window():
 
 if __name__ == '__main__':
     window()
-</td> </tr> </table> ```
+```|
+
+</div>
+
+</div>
