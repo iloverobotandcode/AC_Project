@@ -1,9 +1,9 @@
 <div style="display: flex; gap: 20px;">
 
-<!-- Bảng 1 -->
-<div style="flex: 1">
+<!-- Bảng 1: With function -->
+<div style="flex: 1;">
 
-### 🔹 With Function
+### 🟦 With Function
 
 | Code |
 |------|
@@ -18,12 +18,10 @@ def window():
     width = 500
     height = 500
 
-    # Lấy độ phân giải màn hình hiện tại
     screen = QDesktopWidget().screenGeometry()
     screen_width = screen.width()
     screen_height = screen.height()
 
-    # Tính vị trí để căn giữa
     xpos = (screen_width - width) // 2
     ypos = (screen_height - height) // 2
 
@@ -41,10 +39,10 @@ if __name__ == '__main__':
 
 </div>
 
-<!-- Bảng 2 -->
-<div style="flex: 1">
+<!-- Bảng 2: Without function -->
+<div style="flex: 1;">
 
-### 🔹 Without Function
+### 🟩 Using `frameGeometry()`
 
 | Code |
 |------|
