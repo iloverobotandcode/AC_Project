@@ -39,7 +39,7 @@ def window():
 
 if __name__ == '__main__':
     window()
-</td> <td>
+</td>
 import sys
 from PyQt5.QtWidgets import QApplication, QDialog, QPushButton, QDesktopWidget
 
